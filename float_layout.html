@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плаваючі блоки</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .top {
+            height: 50px;
+            background-color: gold;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .small-square {
+            width: 80px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border: 1px solid #000;
+        }
+
+        .top span {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        .middle-container {
+            display: flex;
+            border: 1px solid black;
+        }
+
+        .left {
+            width: 25%;
+            height: 200px;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .middle {
+            width: 25%;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .center {
+            width: 25%;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .right {
+            width: 25%;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .bottom {
+            height: 30px;
+            background-color: gold;
+            position: relative;
+            border: 1px solid black;
+        }
+
+            .bottom span {
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-weight: bold;
+            }
+
+        .links {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+            .links a {
+                margin: 0 5px;
+                text-decoration: none;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Верхній блок -->
+        <div class="top">
+            <div class="small-square"></div>
+            <span>1</span>
+        </div>
+        <!-- Середні блоки -->
+        <div class="middle-container">
+            <div class="left">2</div>
+            <div class="middle">3</div>
+            <div class="center">4</div>
+            <div class="right">5</div>
+        </div>
+        <!-- Нижній блок -->
+        <div class="bottom">
+            <span>6</span>
+        </div>
+    </div>
+    <div class="links">
+        <a href="file:///C:/Users/1/Desktop/table_layout.html">Таблиці</a>
+        <a href="file:///C:/Users/1/Desktop/float_layout.html">Плаваючі блоки</a>
+        <a href="file:///C:/Users/1/Desktop/inline_layout.html">Inline блоки</a>
+    </div>
+</body>
+</html>
